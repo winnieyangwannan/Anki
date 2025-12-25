@@ -1,11 +1,39 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# Gemini Flashcard Pro - Local Setup
 
-  <h1>Built with AI Studio</h2>
+This app is an AI-powered flashcard generator. To run it locally, follow these steps:
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Prerequisites
+- [Node.js](https://nodejs.org/) (Version 18 or higher recommended)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Setup Instructions
+1. **Clone/Download** the project files into a folder.
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Get an API Key**:
+   Visit [Google AI Studio](https://aistudio.google.com/) to generate a free Gemini API key.
 
-</div>
+4. **Run the Development Server**:
+   You must pass your API key as an environment variable so the app can communicate with Gemini:
+   ```bash
+   API_KEY=your_key_here npm run dev
+   ```
+   *Windows (Command Prompt):*
+   ```cmd
+   set API_KEY=your_key_here && npm run dev
+   ```
+   *Windows (PowerShell):*
+   ```powershell
+   $env:API_KEY="your_key_here"; npm run dev
+   ```
+
+5. **Open the App**:
+   Navigate to `http://localhost:5173` in your browser.
+
+## Project Features
+- **AI Generation**: Uses Gemini 3 to create cards from topics or snippets.
+- **Interactive Coding**: Practice Python directly on the cards.
+- **Markdown Support**: Beautifully formatted deep-dive explanations.
+- **Local Persistence**: Your decks are saved to your browser's LocalStorage.

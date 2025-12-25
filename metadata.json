@@ -1,0 +1,8 @@
+{
+  "name": "Anki",
+  "description": "An AI-powered flashcard generator and study companion. Transform any topic, code snippet, or text into professional-grade revision cards using Gemini 3.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
